@@ -1,0 +1,174 @@
+body{
+  margin:0;
+  font-family:"Cinzel", "Trajan Pro", serif;
+  background:#0b0b0d;                  /* deep gothic black */
+  color:#e6d9c6;                       /* parchment bone tone */
+  overflow-x:hidden;
+  position:relative;
+  overflow-x:hidden;
+  background:url("Image/BG.jpeg") center/cover no-repeat fixed;
+  background-size:300px;
+
+}
+
+header, footer{
+  background:linear-gradient(#1a1a1d,#0b0b0d);
+  color:#e8c56c;
+  text-shadow:0 0 12px #7a0000, 2px 2px #000;
+  border-color:#2b0000;
+}
+
+/* ===== HEADER ===== */
+header{
+  text-align:center;
+  padding:1.4rem;
+  font-size:2.2rem;
+  letter-spacing:3px;
+  border-bottom:3px solid #3c0000;
+}
+
+/* Carousel wrapper */
+.carousel{
+  overflow:hidden;
+  max-width:900px;
+  margin:18px auto;
+}
+
+/* Horizontal strip */
+.track{
+  display:flex;
+  gap:18px;
+  padding:10px;
+  transition:transform .35s cubic-bezier(.25,.9,.25,1.2);
+}
+
+/* Comic cards */
+.panel{
+  min-width:34%;
+  background:#111;
+  border:3px solid #2b0000;
+  border-radius:14px;
+  box-shadow:0 12px 30px #000;
+  transition:.25s ease;
+}
+
+.panel img{
+  width:100%;
+  border-bottom:3px solid #2b0000;
+  filter:grayscale(.1) contrast(1.1);
+}
+
+.panel h3{
+  padding:10px;
+  color:#e6d9c6;
+  letter-spacing:1px;
+}
+
+/* Hover / active feel */
+.panel:hover{
+  transform:translate(-3px,-3px) rotate(-1deg);
+  box-shadow:0 18px 40px #000;
+  border-color:#7a0000;
+}
+
+/* Buttons */
+.controls{
+  text-align:center;
+  margin-bottom:16px;
+}
+
+button{
+ padding:10px 16px;
+  border:2px solid #000;
+  background:#2a1b1b;
+  color:#e6d9c6;
+  font-weight:700;
+  border-radius:12px;
+  cursor:pointer;
+  box-shadow:4px 4px 0 #000;
+  transition:.18s;
+}
+
+button:hover{
+  background:#520000;
+  transform:translate(-2px,-2px);
+  box-shadow:8px 8px 0 #000;
+}
+
+.panel { cursor: pointer; }
+.panel:hover { filter: brightness(1.05); }
+
+@media (max-width: 768px){
+  #pdfViewerOverlay .viewer-container{
+    width:95vw;
+    height:95vh;
+  }
+}
+/* Dark background overlay */
+#pdfViewerOverlay{
+  position:fixed;
+  inset:0;
+  background:#000000d0;
+  display:none;
+  justify-content:center;
+  align-items:center;
+  z-index:9999;
+}
+
+/* Main PDF box */
+.viewer-box{
+  width:82vw;
+  height:92vh;
+  background:#0f0f12;
+  border:3px solid #3c0000;
+  border-radius:16px;
+  box-shadow:0 0 50px #000;
+  display:flex;
+  flex-direction:column;
+  overflow:hidden;
+}
+
+/* Header bar */
+.viewer-bar{
+  background:linear-gradient(#260000,#120000);
+  border-bottom:3px solid #3c0000;
+  color:#f3d9a6;
+  padding:10px 14px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  font-weight:800;
+  letter-spacing:1px;
+  text-shadow:0 0 6px #7a0000;
+}
+
+/* PDF */
+#pdfFrame{
+  flex:1;
+  width:100%;
+  border:0;
+  background:#0b0b0d;
+}
+
+body::after{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  box-shadow:inset 0 0 160px #000;
+}
+
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  background:linear-gradient(#000000cc,#000000ee);
+  pointer-events:none;
+  z-index:-1;
+}
+
+footer{
+  text-align:center;
+  padding:1rem;
+  border-top:4px solid #000;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Classic Horror Comics</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header>CLASSIC HORROR COMICS</header>
+
+<div class="carousel">
+  <div class="track">
+
+    <article class="panel" data-title="RESIDENT EVIL - 1" data-pdf="./pdfs/RE1.pdf">
+      <img src="Resident_Evil.webp" loading="lazy" alt="Comic Cover 1">
+      <h3>RESIDENT EVIL</h3>
+    </article>
+    
+
+    <article class="panel" data-title="RESIDENT EVIL BIOHAZARD VOL2">
+      <img src="Resident_Evil2.webp" loading="lazy" alt="Comic Cover 2">
+      <h3>RESIDENT EVIL BIOHAZARD 2</h3>
+    </article>
+
+    <article class="panel" data-title="RESIDENT EVIL BIOHAZARD VOL3">
+      <img src="BIOHAZARD_3_LAST_ESCAPE_VOL.17.webp" loading="lazy" alt="Comic Cover 2">
+      <h3>RESIDENT EVIL BIOHAZARD 3</h3>
+    </article>
+
+    <article class="panel" data-title="RESIDENT EVIL 4">
+      <img src="Resident_Evil4.webp" loading="lazy" alt="Comic Cover 7">
+      <h3>RESIDENT EVIL 4</h3>
+    </article>
+
+    <article class="panel" data-title="OUTLAST">
+      <img src="outlast1.webp" loading="lazy" alt="Comic Cover 3">
+      <h3>OUTLAST</h3>
+    </article>
+
+    <article class="panel" data-title=" THE OUTLAST TRIALS">
+      <img src="outlast.webp" loading="lazy" alt="Comic Cover 4">
+      <h3>OUTLAST</h3>
+    </article>
+
+    <article class="panel" data-title="FinalDestination">
+      <img src="FinalDestination_springbreakfive.webp" loading="lazy" alt="Comic Cover 5">
+      <h3>FINAL DESTINATION SPRINGBREAKFIVE</h3>
+    </article>
+
+    <article class="panel" data-title="FinalDestination vol2">
+      <img src="FinalDestination_Dceased.webp" loading="lazy" alt="Comic Cover 6">
+      <h3>FINAL DESTINATION DCEASED</h3>
+    </article>
+
+    <article class="panel" data-title="DOOM">
+      <img src="Doom-comic.webp" loading="lazy" alt="Comic Cover 7">
+      <h3>DOOM</h3>
+    </article>
+
+    <div id="pdfViewerOverlay">
+  <div class="viewer-box">
+    
+    <div class="viewer-bar">
+      <span id="fileName"></span>
+      <button id="closeViewer">✖ Close</button>
+    </div>
+
+    <iframe id="pdfFrame"></iframe>
+
+  </div>
+</div>
+
+
+  </div>
+</div>
+
+<div class="controls">
+  <button id="prev">⬅ Prev</button>
+  <button id="next">Next ➡</button>
+</div>
+
+<footer>© Retro Comic Archive</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html> 

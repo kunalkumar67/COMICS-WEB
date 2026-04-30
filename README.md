@@ -1,5 +1,5 @@
 # COMICS WEB
-<B>Horror Comics Website<B>
+<B> Horror Comics Website <B>
 - **User-friendly website to access classic horror comics.**
 - **This website is currently under progress.**
 - **Soon this website will be launched to aceess free classic horror comics.**
